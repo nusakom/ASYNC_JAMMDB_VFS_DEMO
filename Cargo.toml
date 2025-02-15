@@ -1,0 +1,12 @@
+[package]
+name = "async_jammdb_vfs_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.29", features = ["full"] }
+async-trait = "0.1"
+sqlite-vfs = "0.1"    # 这里声明依赖，后续通过 patch 使用本地 fork
+
+[patch.crates-io]
+sqlite-vfs = { path = "sqlite-vfs-fork" }
