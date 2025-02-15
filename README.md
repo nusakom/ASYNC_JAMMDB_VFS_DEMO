@@ -62,7 +62,7 @@ fn main() {
 ```
 
 ## 运行示例输出
-![alt text](image.png)
+![alt text](doc/image.png)
 ```sh
 Starting Async JammDB VFS demo...
 Registered VFS: jammdb_async (default: true)
